@@ -5,33 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoodReads</title>
-
 </head>
 
 <body>
     <header>
         <h1>Repositorio de libros</h1>
     </header>
+
     <main>
-        <article class="art-libro">
-            <h2 class="art-libro__title"><a href="books/book1.html">Titulo del libro</a></h2>
-            <p class="art-libro__author"><a href="">Autor del libro</a></p>
-        </article>
-        <article class="art-libro">
-            <h2 class="art-libro__title"><a href="books/book2.html">Titulo del libro</a></h2>
-            <p class="art-libro__author"><a href="">Autor del libro</a></p>
-        </article>
-        <article class="art-libro">
-            <h2 class="art-libro__title"><a href="books/book3.html">Titulo del libro</a></h2>
-            <p class="art-libro__author"><a href="">Autor del libro</a></p>
-        </article>
-        <article class="art-libro">
-            <h2 class="art-libro__title"><a href="books/book4.html">Titulo del libro</a></h2>
-            <p class="art-libro__author"><a href="">Autor del libro</a></p>
-        </article>
-
+        <form action="/search" method="get">
+            <input type="text" name="pattern">
+            <input type="submit" value="Buscar">
+        </form>
+        @content
     </main>
-
 </body>
 
 </html>
